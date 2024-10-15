@@ -1,0 +1,131 @@
+body {
+  background-color: #0056c3;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header__tiles {
+  margin: 0 auto;
+  width: 25%;
+  padding: 20px 15px;
+  background-color: #c7181a;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__title {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header__subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.container {
+  width: 1440px;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mayak,
+.vesti,
+.unost {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid gray;
+}
+
+.mayak__controls,
+.vesti__controls,
+.unost__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.mayak__play,
+.vesti__play,
+.unost__play {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.mayak__stop,
+.vesti__stop,
+.unost__stop {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+  display: none;
+}
+
+#mayak {
+  background-image: url("../img/mayak.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#vesti {
+  background-image: url("../img/vesti.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#unost {
+  background-image: url("../img/unost.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mayak__controls,
+.vesti__controls,
+.unost__controls {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  gap: 10px;
+}

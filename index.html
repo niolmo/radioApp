@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>radio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__tiles">
+         <h1 class="header__title">ВГТРК</h1>
+         <h2 class="header__subtitle">Радио</h2>
+      </div class="header__tiles">
+     </header>
+    <div class="container" id="container">
+      <div class="mayak" id="mayak">
+        <controls class="mayak__controls" id="mayakControls">
+          <button type="button" class="mayak__play" id="mayakPlay">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.73999 12.2299V10.5599C8.73999 8.47988 10.21 7.62988 12.01 8.66988L13.46 9.50988L14.91 10.3499C16.71 11.3899 16.71 13.0899 14.91 14.1299L13.46 14.9699L12.01 15.8099C10.21 16.8499 8.73999 15.9999 8.73999 13.9199V12.2299Z"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button type="button" class="mayak__stop" id="mayakStop">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="1.5" />
+              <path
+                d="M8 12C8 10.1144 8 9.17157 8.58579 8.58579C9.17157 8 10.1144 8 12 8C13.8856 8 14.8284 8 15.4142 8.58579C16 9.17157 16 10.1144 16 12C16 13.8856 16 14.8284 15.4142 15.4142C14.8284 16 13.8856 16 12 16C10.1144 16 9.17157 16 8.58579 15.4142C8 14.8284 8 13.8856 8 12Z"
+                stroke="#fff"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+        </controls>
+        <audio
+          src="http://icecast.vgtrk.cdnvideo.ru/mayakfm"
+          id="radio-one"
+          class="mayak__radio-one"
+        ></audio>
+      </div>
+
+      <div class="vesti" id="vesti">
+        <controls class="vesti__controls" id="vestiControls">
+          <button type="button" class="vesti__play" id="vestiPlay">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.73999 12.2299V10.5599C8.73999 8.47988 10.21 7.62988 12.01 8.66988L13.46 9.50988L14.91 10.3499C16.71 11.3899 16.71 13.0899 14.91 14.1299L13.46 14.9699L12.01 15.8099C10.21 16.8499 8.73999 15.9999 8.73999 13.9199V12.2299Z"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button type="button" class="vesti__stop" id="vestiStop">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="1.5" />
+              <path
+                d="M8 12C8 10.1144 8 9.17157 8.58579 8.58579C9.17157 8 10.1144 8 12 8C13.8856 8 14.8284 8 15.4142 8.58579C16 9.17157 16 10.1144 16 12C16 13.8856 16 14.8284 15.4142 15.4142C14.8284 16 13.8856 16 12 16C10.1144 16 9.17157 16 8.58579 15.4142C8 14.8284 8 13.8856 8 12Z"
+                stroke="#fff"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+        </controls>
+        <audio
+          src="http://icecast.vgtrk.cdnvideo.ru/vestifm"
+          id="radio-two"
+          class="vesti__radio-one"
+        ></audio>
+      </div>
+
+      <div class="unost" id="unost">
+        <controls class="unost__controls" id="unostControls">
+          <button type="button" class="unost__play" id="unostPlay">
+            <img src="./img/play.svg" alt="Play" />
+          </button>
+          <button type="button" class="unost__stop" id="unostStop">
+            <img src="./img/stop.svg" alt="Stop" />
+          </button>
+        </controls>
+        <audio
+          src="http://icecast.vgtrk.cdnvideo.ru/unost"
+          id="radio-tree"
+          class="unost__radio-tree"
+        ></audio>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
