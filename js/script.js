@@ -56,6 +56,7 @@ function stopUnost() {
 //STATIONS
 
 mayakPlay.addEventListener("click", () => {
+  mayakRadioOne.src = "http://icecast.vgtrk.cdnvideo.ru/mayakfm";
   mayakRadioOne.play();
   if (mayakRadioOne.play()) {
     playMyak();
@@ -72,6 +73,7 @@ mayakStop.addEventListener("click", () => {
 });
 
 vestiPlay.addEventListener("click", () => {
+  vestiRadioTwo.src = "http://icecast.vgtrk.cdnvideo.ru/vestifm";
   vestiRadioTwo.play();
   if (vestiRadioTwo.play()) {
     playVesti();
@@ -87,6 +89,7 @@ vestiStop.addEventListener("click", () => {
 });
 
 unostPlay.addEventListener("click", () => {
+  unostRadioTree.src = "http://icecast.vgtrk.cdnvideo.ru/unost";
   unostRadioTree.play();
   if (unostRadioTree.play()) {
     playUnost();
