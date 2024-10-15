@@ -39,7 +39,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -56,12 +56,35 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+}
+
+.mayak.glowing,
+.vesti.glowing,
+.unost.glowing {
+  background-color: #fff;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff,
+      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.unost {
   border: 2px solid gray;
 }
 
 .mayak__controls,
 .vesti__controls,
 .unost__controls {
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: end;

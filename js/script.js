@@ -14,42 +14,50 @@ const unostStop = document.getElementById("unostStop");
 const mayakRadioOne = document.getElementById("radio-one");
 const vestiRadioTwo = document.getElementById("radio-two");
 const unostRadioTree = document.getElementById("radio-tree");
+const mayGlow = document.getElementById("mayakGlowing");
 
 //Buttons chenge
 function playMyak() {
   mayakPlay.style.display = "none";
   mayakStop.style.display = "block";
+  mayak.classList.add("glowing");
 }
 
 function playVesti() {
   vestiPlay.style.display = "none";
   vestiStop.style.display = "block";
+  vesti.classList.add("glowing");
 }
 
 function playUnost() {
   unostPlay.style.display = "none";
   unostStop.style.display = "block";
+  unost.classList.add("glowing");
 }
 
 function stopMyak() {
   mayakStop.style.display = "none";
   mayakPlay.style.display = "block";
+  mayak.classList.remove("glowing");
 }
 
 function stopVesti() {
   vestiStop.style.display = "none";
   vestiPlay.style.display = "block";
+  vesti.classList.remove("glowing");
 }
 
 function stopUnost() {
   unostStop.style.display = "none";
   unostPlay.style.display = "block";
+  unost.classList.remove("glowing");
 }
 
 //STATIONS
 
 mayakPlay.addEventListener("click", () => {
   mayakRadioOne.play();
+  mayak.classList.add("glowing");
   if (mayakRadioOne.play()) {
     playMyak();
     vestiRadioTwo.pause();
