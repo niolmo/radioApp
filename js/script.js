@@ -57,7 +57,6 @@ function stopUnost() {
 
 mayakPlay.addEventListener("click", () => {
   mayakRadioOne.play();
-  mayak.classList.add("glowing");
   if (mayakRadioOne.play()) {
     playMyak();
     vestiRadioTwo.pause();
